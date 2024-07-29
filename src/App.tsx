@@ -84,6 +84,15 @@ function App() {
                         </form>
                     </div>
                 </div>
+                <div className={styles.banner}>
+                    <h1>
+                        Top Tech Mystery Box <br /> at Unbeatable Prices
+                    </h1>
+                    <p>
+                        Fast shipping | Easy returns | Special discount for
+                        students
+                    </p>
+                </div>
             </div>
         </>
     );

@@ -2,6 +2,9 @@
 .root {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     padding: 10px;
     max-width: 1232px;
     color: variables.$textColor;
@@ -97,5 +100,20 @@
     img {
         width: 100px;
         height: 40px;
+    }
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    width: 790px;
+    font-size: 1.2rem;
+    h1 {
+    }
+    p {
+        color: variables.$alt;
     }
 }
