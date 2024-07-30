@@ -1,7 +1,7 @@
 import styles from './App.module.scss';
-import BottomSection from './bottomSection/BottomSection';
-import MidSection from './middleSection/MidSection';
-import TopSection from './topSection/TopSection';
+import BottomSection from './bottom/BottomSection';
+import MidSection from './middle/MidSection';
+import TopSection from './top/TopSection';
 
 function App() {
     return (
