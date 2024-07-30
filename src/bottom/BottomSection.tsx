@@ -43,7 +43,9 @@ export default function BottomSection() {
             </div>
             <div className={styles.footer}>
                 <p>We accept the following credit cards</p>
-                <img src="/cards.png" alt="" />
+                <a href="/">
+                    <img src="/cards.png" alt="" />
+                </a>
             </div>
         </>
     );

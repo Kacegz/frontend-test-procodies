@@ -16,14 +16,18 @@ export default function Carousel() {
             <img src={active} alt="" className={styles.topImg} />
             <div className={styles.selection}>
                 {carousel.map((image) => (
-                    <img
-                        src={image}
-                        alt=""
-                        className={`${styles.carouselImg} ${
-                            image == active ? styles.active : ''
-                        }`}
+                    <button
+                        className={styles.carouselButton}
                         onClick={() => setActive(image)}
-                    />
+                    >
+                        <img
+                            src={image}
+                            alt=""
+                            className={`${styles.carouselImg} ${
+                                image == active ? styles.active : ''
+                            }`}
+                        />
+                    </button>
                 ))}
             </div>
         </div>
