@@ -1,16 +1,8 @@
 import { useState } from 'react';
 import styles from './App.module.scss';
-import topImg from './assets/topImg.png';
-import form1 from './assets/form1.png';
-import form2 from './assets/form2.png';
-import form3 from './assets/form3.png';
 import carousel1 from './assets/carousel1.png';
 import carousel2 from './assets/carousel2.png';
 import carousel3 from './assets/carousel3.png';
-import middle1 from './assets/middle1.png';
-import middle2 from './assets/middle2.png';
-import cards from './assets/cards.png';
-
 function App() {
     const [carousel, setCarousel] = useState([carousel1, carousel2, carousel3]);
     return (
@@ -22,7 +14,11 @@ function App() {
                             <h1>$1.99</h1>
                             <p>Original value $500</p>
                         </div>
-                        <img src={topImg} alt="" className={styles.topImg} />
+                        <img
+                            src="public/topImg.png"
+                            alt=""
+                            className={styles.topImg}
+                        />
                         <div className={styles.selection}>
                             {carousel.map((image) => (
                                 <img
@@ -89,9 +85,9 @@ function App() {
                                     required
                                 />
                                 <div className={styles.formImgs}>
-                                    <img src={form1} alt="" />
-                                    <img src={form2} alt="" />
-                                    <img src={form3} alt="" />
+                                    <img src="public/form1.png" alt="" />
+                                    <img src="public/form2.png" alt="" />
+                                    <img src="public/form3.png" alt="" />
                                 </div>
                             </div>
                         </form>
@@ -107,7 +103,7 @@ function App() {
                     </p>
                 </div>
                 <div className={styles.middleContent}>
-                    <img src={middle1} alt="" />
+                    <img src="public/middle1.png" alt="" />
                     <div>
                         <h2>
                             Curious about the <span>StockX</span> Mystery Box?
@@ -145,7 +141,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <img src={middle2} alt="" />
+                    <img src="public/middle2.png" alt="" />
                 </div>
                 <div className={styles.bottomBanner}>
                     <div>
@@ -189,7 +185,7 @@ function App() {
                 </div>
                 <div className={styles.footer}>
                     <p>We accept the following credit cards</p>
-                    <img src={cards} alt="" />
+                    <img src="public/cards.png" alt="" />
                 </div>
             </div>
         </>
