@@ -6,16 +6,24 @@ import carousel2 from '../assets/carousel2.png';
 import carousel3 from '../assets/carousel3.png';
 export default function Carousel() {
     const [carousel] = useState([carousel1, carousel2, carousel3]);
+    const [active, setActive] = useState(topImg);
     return (
         <div className={styles.carousel}>
             <div className={styles.round}>
                 <h1>$1.99</h1>
                 <p>Original value $500</p>
             </div>
-            <img src={topImg} alt="" className={styles.topImg} />
+            <img src={active} alt="" className={styles.topImg} />
             <div className={styles.selection}>
                 {carousel.map((image) => (
-                    <img src={image} alt="" className={styles.carouselImg} />
+                    <img
+                        src={image}
+                        alt=""
+                        className={`${styles.carouselImg} ${
+                            image == active ? styles.active : ''
+                        }`}
+                        onClick={() => setActive(image)}
+                    />
                 ))}
             </div>
         </div>

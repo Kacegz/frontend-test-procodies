@@ -11,6 +11,11 @@
 .carouselImg {
     width: 132px;
     height: 132px;
+    box-sizing: border-box;
+}
+.active {
+    border: 1px solid variables.$alt;
+    border-radius: 15px;
 }
 .round {
     position: absolute;
